@@ -1,11 +1,10 @@
 module.exports = function (window) {
     "use strict";
 
-    require('polyfill/polyfill-base.js');
-
     var itagCore =  require('itags.core')(window),
         itagName = 'i-checkboxlist', // <-- define your own itag-name here
         DOCUMENT = window.document,
+        ITSA = window.ITSA,
         Itag;
 
     if (!window.ITAGS[itagName]) {
